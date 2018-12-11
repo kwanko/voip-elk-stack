@@ -38,9 +38,11 @@ The pipeline is composed of:
 
 # Dashboards examples
 
-* Call quality dashboard
+* Call quality dashboard for global quality overview
 
 ![Call quality dashboard with multiple calls](/images/call_quality_dashboard-multiple_calls.png)
+
+* Call quality dashboard for single call analysis
 
 ![Call quality dashboard filtered on a single call](/images/call_quality_dashboard-single_call.png)
 
