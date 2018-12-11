@@ -10,7 +10,7 @@ Why not HOMER ? At the time of writing (end of year 2018), Homer5 is based on ph
 
 # How ?
 
-![Architecture](/images/architecture.svg)
+![Architecture](/images/architecture.png)
 
 The pipeline is composed of:
 
