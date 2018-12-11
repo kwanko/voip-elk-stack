@@ -1,0 +1,28 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /var/log/asterisk/cdr-custom/Master.csv
+  tags:
+    - asterisk_cdr
+
+
+#================================ General ======================================
+
+name: "<local_fqdn>"
+
+#================================ Processors ===================================
+
+processors:
+- add_locale: ~
+
+#============================= Filebeat modules ===============================
+
+filebeat.config.modules:
+  path: ${path.config}/modules.d/*.yml
+  reload.enabled: false
+
+#================================ Outputs =====================================
+
+output.logstash:
+  hosts: ["X.X.X.X:5044"]

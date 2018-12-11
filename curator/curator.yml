@@ -1,0 +1,10 @@
+# vim: syntax=yaml tabstop=2 shiftwidth=2 expandtab
+# Managed by Ansible
+---
+client:
+  hosts:
+    - 127.0.0.1
+  port: 9200
+
+logging:
+  loglevel: INFO

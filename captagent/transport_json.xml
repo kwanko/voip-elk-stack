@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<document type="captagent_module/xml">
+    <module name="transport_json" description="JSON Protocol" serial="2014010403">
+    <profile name="jsonsocketsip" description="Transport JSON" enable="true" serial="2014010403">
+        <settings>
+        <param name="capture-version" value="1"/>
+        <param name="capture-host" value="X.X.X.X"/>
+        <param name="capture-port" value="9071"/>
+        <param name="capture-proto" value="udp"/>
+        <param name="capture-id" value="2001"/>
+        <param name="payload-send" value="true"/>
+        </settings>
+    </profile>
+    <profile name="jsonsocketrtcp" description="Transport JSON" enable="true" serial="2014010403">
+        <settings>
+        <param name="capture-version" value="1"/>
+        <param name="capture-host" value="X.X.X.X"/>
+        <param name="capture-port" value="9072"/>
+        <param name="capture-proto" value="udp"/>
+        <param name="capture-id" value="2002"/>
+        <param name="payload-send" value="true"/>
+        </settings>
+    </profile>
+    </module>
+</document>

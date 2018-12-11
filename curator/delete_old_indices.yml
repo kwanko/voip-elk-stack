@@ -1,0 +1,52 @@
+# vim: syntax=yaml tabstop=2 shiftwidth=2 expandtab
+# Managed by Ansible
+---
+actions:
+  1:
+    action: delete_indices
+    description: >-
+      Delete indices older than 30 days (based on index name), for sip-capture-
+    options:
+      ignore_empty_list: True
+    filters:
+    - filtertype: pattern
+      kind: prefix
+      value: sip-capture-
+    - filtertype: age
+      source: name
+      direction: older
+      timestring: '%Y.%m.%d'
+      unit: days
+      unit_count: 30
+  2:
+    action: delete_indices
+    description: >-
+      Delete indices older than 60 days (based on index name), for rtcp-capture-
+    options:
+      ignore_empty_list: True
+    filters:
+    - filtertype: pattern
+      kind: prefix
+      value: rtcp-capture-
+    - filtertype: age
+      source: name
+      direction: older
+      timestring: '%Y.%m.%d'
+      unit: days
+      unit_count: 60
+  3:
+    action: delete_indices
+    description: >-
+      Delete indices older than 365 days (based on index name), for asterisk-cdr-
+    options:
+      ignore_empty_list: True
+    filters:
+    - filtertype: pattern
+      kind: prefix
+      value: asterisk-cdr-
+    - filtertype: age
+      source: name
+      direction: older
+      timestring: '%Y.%m.%d'
+      unit: days
+      unit_count: 365

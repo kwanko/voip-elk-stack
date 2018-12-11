@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<document type="captagent_module/xml">
+    <module name="socket_pcap" description="pcap Socket" serial="2014010402">
+    <profile name="socketspcap_sip" description="PCAP socket" enable="true" serial="2014010403">
+        <settings>
+        <param name="dev" value="any"/>
+        <param name="promisc" value="true"/>
+        <param name="reasm" value="true"/>
+        <param name="tcpdefrag" value="true"/>
+        <param name="snap-len" value="9000"/>
+        <param name="capture-plan" value="sip_capture_plan.cfg"/>
+        <param name="filter" value="portrange 5060-5091"/>
+        </settings>
+    </profile>
+    <profile name="socketspcap_rtcp" description="PCAP socket" enable="true" serial="2014010403">
+        <settings>
+        <param name="dev" value="any"/>
+        <param name="promisc" value="true"/>
+        <param name="reasm" value="false"/>
+        <param name="ring-buffer" value="20"/>
+        <param name="snap-len" value="256"/>
+        <param name="capture-filter" value="rtcp"/>
+        <param name="capture-plan" value="rtcp_capture_plan.cfg"/>
+        <param name="filter" value="portrange 5060-50000"/>
+        </settings>
+    </profile>
+    </module>
+</document>
