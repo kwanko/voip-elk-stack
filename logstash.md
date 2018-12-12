@@ -29,7 +29,7 @@ The main transformations of a SIP event are:
 
 1. saving the capture endpoint hostname in the `capture_endpoint` field,
 2. resolving PTR records of `src_ip4` and `dst_ip4` in `src_host` and `dst_host`,
-3. parsing the sip message using a custom logstash filter plugin available here: [https://github.com/limhud/logstash-filter-sip](https://github.com/limhud/logstash-filter-sip).
+3. parsing the sip message using a custom logstash filter plugin available here: [https://github.com/limhud/logstash-filter-sip/tree/logstash\_6.X](https://github.com/limhud/logstash-filter-sip/tree/logstash_6.X).
 
 It is then stored in Elasticsearch in the daily dedicated index `sip-capture-%{+YYYY.MM.dd}`.
 
