@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <document type="captagent_module/xml">
-    <module name="transport_json" description="JSON Protocol" serial="2014010403">
+    <module name="output_json" description="JSON Protocol" serial="2014010403">
     <profile name="jsonsocketsip" description="Transport JSON" enable="true" serial="2014010403">
         <settings>
         <param name="capture-version" value="1"/>

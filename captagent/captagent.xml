@@ -20,7 +20,7 @@
     <configuration name="modules.conf" description="Modules">
         <modules>
             <load module="database_hash" register="local"/>
-            <load module="transport_json" register="local"/>
+            <load module="output_json" register="local"/>
             <load module="protocol_sip" register="local"/>
             <load module="protocol_rtcp" register="local"/>                                          
             <load module="socket_pcap" register="local"/>
